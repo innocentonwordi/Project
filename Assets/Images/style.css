@@ -1,19 +1,28 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+=======
+* { box-sizing: border-box; margin: 0; padding: 0; }
+>>>>>>> 0692797facc0d0dca8b5771f4fb5f2165c7e4e42
 
 body {
   background: #f9f7f4;
   color: #1e1e1c;
+<<<<<<< HEAD
   font-family: "Lato", sans-serif;
+=======
+  font-family: 'Lato', sans-serif;
+>>>>>>> 0692797facc0d0dca8b5771f4fb5f2165c7e4e42
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1.5rem;
 }
 
+<<<<<<< HEAD
 body > * {
   width: 100%;
   max-width: 660px;
@@ -43,6 +52,16 @@ mark {
 a {
   color: #c2622d;
 }
+=======
+body > * { width: 100%; max-width: 660px; }
+
+h1, h2 { font-family: 'Playfair Display', serif; }
+h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+strong { color: #c2622d; }
+mark { background: #eef4e8; color: #3d5a34; padding: 0 0.4rem; border-radius: 4px; }
+a { color: #c2622d; }
+>>>>>>> 0692797facc0d0dca8b5771f4fb5f2165c7e4e42
 
 .header {
   text-align: center;
@@ -52,14 +71,19 @@ a {
   animation: fadeDown 0.8s ease both;
 }
 
+<<<<<<< HEAD
 .card,
 .nutrition,
 .source {
+=======
+.card, .nutrition, .source {
+>>>>>>> 0692797facc0d0dca8b5771f4fb5f2165c7e4e42
   background: #fff;
   border: 1px solid #e2ddd6;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.25rem;
+<<<<<<< HEAD
   transition:
     transform 0.25s,
     box-shadow 0.25s;
@@ -119,3 +143,21 @@ a {
     transform: translateY(0);
   }
 }
+=======
+  transition: transform 0.25s, box-shadow 0.25s;
+  animation: fadeUp 0.6s ease both;
+}
+
+.card:hover, .nutrition:hover { transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07); }
+.card ul, .card ol { padding-left: 1.25rem; }
+.card li { padding: 0.3rem 0; border-bottom: 1px solid #e2ddd6; }
+.card li:last-child { border-bottom: none; }
+.image { display: block; width: 100%; max-width: 300px; border-radius: 10px; margin: 0 auto; }
+.source { background: #fdf4ee; border-left: 4px solid #c2622d; border-radius: 0 10px 10px 0; }
+.source h2 { color: #c2622d; font-size: 1rem; }
+
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } 
+to { opacity: 1; transform: translateY(0); } }
+ @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+>>>>>>> 0692797facc0d0dca8b5771f4fb5f2165c7e4e42
